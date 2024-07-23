@@ -112,7 +112,7 @@ handle_time_range() {
 
     # Check if start_date is valid
     if [ -z "$start_date" ]; then
-        echo "Error: Invalid start date format. Allowed format Y-m-d"
+        echo "Error: Invalid start date format. Allowed format YYYY-mm-dd"
         return 1
     fi
 
@@ -123,7 +123,7 @@ handle_time_range() {
     else
         # Check if end_date is valid
         if [ -z "$end_date" ]; then
-            echo "Error: Invalid end date format."
+            echo "Error: Invalid end date format. YYYY-mm-dd"
             return 1
         fi
 
